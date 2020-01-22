@@ -9,9 +9,7 @@ class Modal extends Component{
     }
     // we don't unneccessary upate modalonly updates when OrderNow
 
-    componentWillUpdate(){
-        console.log('[Modal] Componentwillupdate')
-    }
+
     render(){
         return(
             <Aux>

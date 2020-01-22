@@ -2,9 +2,7 @@ import React,{Component} from 'react'
 import Aux from '../../../hoc/aux';
 import Button from '../../UI/Button/Button';
 class OrderSummary extends Component{
-    componentWillMount(){
-        console.log('[OrderSummary] WillUpdate');
-    }
+    
     render(){
         const ingridientSummary = Object.keys(this.props.ingridients).map(igKey =>{
             return(<li key = {igKey}><span style = {{textTransform :'capitalize'}}>{igKey}</span>:x{this.props.ingridients[igKey]}
